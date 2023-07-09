@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/latex-cv-website/static/css/main.1a1b3f76.css",
+    "main.js": "/latex-cv-website/static/js/main.6764f668.js",
+    "static/js/787.1ed0c42c.chunk.js": "/latex-cv-website/static/js/787.1ed0c42c.chunk.js",
+    "static/media/pp.gif": "/latex-cv-website/static/media/pp.0b986347c7fec026d81c.gif",
+    "static/media/background.mp4": "/latex-cv-website/static/media/background.f1b915cf1f8c969f2b89.mp4",
+    "static/media/background-vid.mp4": "/latex-cv-website/static/media/background-vid.71e9b3f89f849ba17d9d.mp4",
+    "index.html": "/latex-cv-website/index.html",
+    "main.1a1b3f76.css.map": "/latex-cv-website/static/css/main.1a1b3f76.css.map",
+    "main.6764f668.js.map": "/latex-cv-website/static/js/main.6764f668.js.map",
+    "787.1ed0c42c.chunk.js.map": "/latex-cv-website/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a1b3f76.css",
+    "static/js/main.6764f668.js"
+  ]
+}
