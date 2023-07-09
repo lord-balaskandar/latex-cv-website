@@ -50,7 +50,7 @@ useEffect(() => {
         {props.isPlaying ? <BsPauseCircle className='btn_action pp' onClick={PlayPause}/> : <BsPlayCircle className='btn_action pp' onClick={PlayPause}/>}
         <BsSkipEndCircle className='btn_action' onClick={skipNext}/>
       </div>
-      <div className='songTitle'>{props.currentSong.title}</div>    
+<div className='songTitle'>{props.currentSong.title}</div>
 
     </div>
 

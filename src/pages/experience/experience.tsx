@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import background from "./background.mp4";
+import background from "./background-vid.mp4";
 import BackButton from "../../components/backButton/backButton";
 
 function Experience() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8081/experience")
+    fetch("http://86.151.208.21:8081/experience")
       .then((response) => response.json())
       .then((data) => setData(data));
   });
@@ -39,7 +39,7 @@ function Experience() {
     <>
 
     <div className="Page">
-      <video src={background} autoPlay loop muted />
+      <video  autoPlay loop muted playsInline src={background} />
       <div className="PageContent">
       <div className="BackContainer">
       <BackButton/>

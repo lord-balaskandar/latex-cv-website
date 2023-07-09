@@ -5,7 +5,7 @@ import Player from './player';
 function MP3Player() {
     const [songs, setSongs] = useState(songsData)
     const [isPlaying, setIsPlaying] = useState(false)
-    const [currentSong, setCurrentSong] = useState(songsData[0])
+    const [currentSong, setCurrentSong] = useState(songs[Math.floor(Math.random() * ((songs.length-1) - 0 + 1) + 0)])
     const [songEnded, setSongEnded]= useState(false)
     const audioElem: any = useRef();
 

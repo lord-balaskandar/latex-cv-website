@@ -1,10 +1,1 @@
-export default [
-    {
-        title: "Hurts Me - Tory Lanex & Yoko Gold (slowed & reverbed)",
-        url: "hurts-me"
-    },
-    {
-        title: "Give It Up - Don Toliver",
-        url: "give-it-up"
-    }
-]
+export default [{"title":"A Lesser Man - The Weeknd (slowed & reverbed)","url":"a-lesser-man"},{"title":"Crack - Playboi Carti (prod ta2cute)","url":"crack"},{"title":"Give It Up - Don Toliver","url":"give-it-up"},{"title":"Hurts Me - Tory Lanex & Yoko Gold (slowed & reverbed)","url":"hurts-me"},{"title":"London View - BM (slowed & reverbed)","url":"london-view"},{"title":"Star Life - Don Toliver","url":"star-life"},{"title":"We Dont Need To Rush This - voxlc (AI)","url":"we-dont-need-to-rush-this"}]

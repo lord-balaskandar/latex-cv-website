@@ -5,21 +5,19 @@ function Intro() {
 
     return <div className = "Page">
         
-        <video src={background} autoPlay loop muted/>
+        <video autoPlay loop muted playsInline src={background}/>
         
         <div className='PageContent'>
             <div className='PageSubContent bigboy'>
-            <div className='IntroTitle'>{"Thanushen \n Balaskandar"}</div>
-            <div className='IntroSubHeading'>Passionate Software Developer</div>
+            <div className='IntroTitle'>{"Thanushen Balaskandar"}</div>
+            <div className='IntroSubHeading'>GRC Product/Implementations Analyst & Developer</div>
             <div>
                 <img className = 'ProfilePicture' src = {profilePic}/>
             </div>
             <div className='introSection'>
             <IntroButton display="Experience"/>
             <IntroButton display="Qualifications"/>
-            <IntroButton display="Education"/>
-            <IntroButton display="Technical Skills"/>
-            <IntroButton display="Key Skills"/>
+            <IntroButton display="Skills"/>
             </div>
         </div>
         </div>

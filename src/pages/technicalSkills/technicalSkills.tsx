@@ -2,14 +2,32 @@ import { useEffect, useState } from "react";
 import background from "./background.mp4";
 import BackButton from "../../components/backButton/backButton";
 
-function TechnicalSkills() {
+function Skills() {
   const [data, setData] = useState([]);
+  const [data2, setData2] = useState([]);
+
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8081/technicalskills")
+    fetch("http://86.151.208.21:8081/technicalskills")
       .then((response) => response.json())
       .then((data) => setData(data));
+
+      fetch("http://86.151.208.21:8081/keyskills")
+      .then((response) => response.json())
+      .then((data) => setData2(data));
   });
+
+  const prepareData2 = (r: any) => (
+    <>
+    <ul className="">
+    {r.filter((item: string)=> item && item !== "").map((anObjectMapped: any, index: number) => {
+      return (
+        <li key={`${anObjectMapped}`} className="element">{anObjectMapped}</li>
+      );
+    })}
+    </ul>
+    </>
+  );
 
   const prepareData = (r: any) => (
     <>
@@ -27,7 +45,7 @@ function TechnicalSkills() {
     <>
 
     <div className="Page">
-      <video src={background} autoPlay loop muted />
+    <video  autoPlay loop muted playsInline src={background} />
       <div className="PageContent">
       <div className="BackContainer">
       <BackButton/>
@@ -36,6 +54,8 @@ function TechnicalSkills() {
           <div className="pageSection">
             <div className="PageHeader">Technical Skills</div>
             <div className="PageMainContent bigboy">{prepareData(data)}</div>
+            <div className="PageHeader">Key Skills</div>
+            <div className="PageMainContent bigboy">{prepareData2(data2)}</div>
           </div>
         </div>
       </div>
@@ -44,4 +64,4 @@ function TechnicalSkills() {
   );
 }
 
-export default TechnicalSkills;
+export default Skills;
